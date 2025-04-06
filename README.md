@@ -1,19 +1,41 @@
 # DecisionTree & Random Forest
-This project aims to predict final exam scores using an Artificial Neural Network (ANN) model. The approach leverages advanced techniques including Glorot uniform initialization, dropout regularization, and the Adam Max optimizer with batch processing to optimize predictive performance. Comprehensive data preprocessing was essential, with steps including standardization, normalization, and robust feature engineering. Outliers were managed effectively using the IQR method.
+
+## Prediction of Valuable Employee Attrition
+This project aims to predict employee attrition using Decision Tree and Random Forest algorithms. The objective is to identify the key factors leading to the voluntary departure of valuable employees, enabling HR departments to anticipate and reduce turnover.
 
 ## Dataset
-The dataset (StudentPerformanceFactors.csv) includes both numerical and categorical variables that capture various aspects of student academic and lifestyle data. Significant effort was put into re-labeling and accurately interpreting the categorical data through additional research and feature engineering.
+The dataset (EmployeeAttrition.csv) includes both numerical and categorical variables describing employees' personal, professional, and organizational characteristics. Comprehensive data preprocessing was conducted, including handling missing values, encoding categorical features, data normalization, and outlier detection using the IQR method.
 
 ## Key Features
+Age: Age of the employee.
 
-Attendance: Frequency of student attendance.
+JobRole: Position held within the company.
 
-Hours_Studied: Total hours dedicated to studying.
+MonthlyIncome: Monthly salary of the employee.
 
-Tutoring_Sessions: Number of tutoring sessions attended.
+YearsAtCompany: Number of years the employee has been with the company.
 
-Sleep_Hours: Average number of hours of sleep.
+JobSatisfaction: Reported level of job satisfaction.
 
+OverTime: Whether the employee works overtime (Yes/No).
+
+Attrition (Target): Whether the employee left the company (Yes/No).
+
+## Models Used
+Decision Tree: Chosen for its interpretability and ability to visualize decision paths.
+
+Random Forest: Used to improve predictive performance and reduce overfitting through ensemble learning.
+
+## Model Evaluation
+Model performance was assessed using the following metrics:
+
+Accuracy
+
+Precision & Recall
+
+Confusion Matrix
+
+F1_score
 ## Installation & Setup
 
 Ensure you have Python installed along with the required libraries.
@@ -21,5 +43,5 @@ Ensure you have Python installed along with the required libraries.
 Install dependencies using:
 
 ```bash
-pip install pandas numpy matplotlib seaborn
+pip install pandas numpy matplotlib seaborn scikit-learn
 
